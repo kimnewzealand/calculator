@@ -2,22 +2,39 @@
 // Calculator //
 // -    -   - //
 
+//document.addEventListener('DOMContentLoaded', startCalculator)
+
 // Create variable for the calculator object from the html class calculator
+var calculator = document.getElementsByClassName('calculator')
 
 // Create object for screen object with default value as null from the html object screen
+var display = document.getElementsByClassName('display')
+
+// Create object for screen object with default value as null from the html object screen
+var buttons = document.getElementsByClassName('buttons')
+
+// Create object for screen object with default value as null from the html object screen
+var clear = document.getElementsByClassName('clear')
+
+// Define the cells property as an array
+buttons.cells = []
 
 // Create an running total variable default to 0
+total = 0
 
-// Create a new button array from the html class button with 5x4 buttons, where one button, the + is a bigger button
+
 
 // Create an array with the sequence of input values as buttons are clicked
+var sequenceArr = []
+
 
 // Create an event handler on click for the array buttons, with the button function  buttonClick 
+clear.buttonClick = clearClick
 
 // Create a function buttonClick that does something on each button click 
-
+function clearClick() {
 //      Saves ie push the value of the button to the sequence array then,
-
+        sequenceArr.push(1)
 //      If it is one of the clear buttons it will clear the screen value, and reset the running total to 0 and break
 
 //      Else if it is the operator button +,-,% or / then break
@@ -32,5 +49,5 @@
 //      Else if it is the operator button = then return the running total value, and reset the running total to 0
 
 
-
+}
 
