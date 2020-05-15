@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <title>Calculator</title>
-    <script src="calculator.js"></script>
+
     <link rel="stylesheet" href="main.css">
 </head>
 
@@ -15,28 +15,30 @@
         <h1>CALCULATOR</h1>
         <div class="display">0</div>
         <div class="buttons">
-            <button class="clear">AC</button>
-            <button class="clear">CE</button>
-            <button class="op">%</button>
-            <button class="op">/</button>
+            <button class="clear" data-action="clear">AC</button>
+            <button class="clear" data-action="clear">CE</button>
+            <button class="op" data-action="percentage">%</button>
+            <button class="op" data-action="divide">/</button>
             <button class="digit">7</button>
             <button class="digit">8</button>
             <button class="digit">9</button>
-            <button class="op">x</button>
+            <button class="op" data-action="multiple">x</button>
             <button class="digit">4</button>
             <button class="digit">5</button>
             <button class="digit">6</button>
-            <button class="digit">-</button>
+            <button class="digit" data-action="subtract">-</button>
             <button class="digit">1</button>
             <button class="digit">2</button>
             <button class="digit">3</button>
-            <button class="op">+</button>
+            <button class="op" data-action="add">+</button>
             <button class="digit">0</button>
-            <button class="digit">.</button>
-            <button class="equals">=</button>
+            <button class="decimal" data-action ="decimal">.</button>
+            <button class="equals" data-action="equals">=</button>
             <button class="op"></button>
         </div>
     </div>
+    <script src="calculator.js"></script>
+    <script src="tests.js"></script>
 </body>
 
 </html>
