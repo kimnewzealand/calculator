@@ -25,7 +25,9 @@ body {
     text-align: center;
 }
 
-h1 {}
+h1 {
+    font-size: 6vh;
+}
 
 .calculator {
     display: flex;
@@ -42,7 +44,7 @@ h1 {}
     height: 100%;
     margin: 0.25em;
     text-align: right;
-    font-size: 3em;
+    font-size: 8vh;
     border: solid var(--borders-color);
 }
 
