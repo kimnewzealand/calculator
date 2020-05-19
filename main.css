@@ -1,44 +1,55 @@
+/*variables */
 
-html, body {
+
+/* colour palette inspiration volcanic https://colorpalettes.net/color-palette-785/ */
+
+:root {
+    --borders-color: black;
+    --clears-color: #fe8502;
+    --backgrounds-color: #1a451a;
+    --buttons-color: #017cc2;
+    --displays-color: #efebe2;
+    --op-color: #52836e;
+}
+
+
+/*main styles*/
+
+html,
+body {
     height: 100%;
     font-family: "Courier New", Courier, monospace;
-    background-color: black;
+    color: var(--borders-color);
     display: flex;
     justify-content: center;
     text-align: center;
-  }
-  
+}
+
+h1 {}
 
 .calculator {
-    display:flex;
+    display: flex;
     justify-content: top;
-    background-color:#808080;
+    background-color: var(--backgrounds-color);
     flex-direction: column;
+    border: solid var(--borders-color);
     border-radius: 25px;
 }
 
-.h1 {
-    font-size: 1em;
-   
-}
-
 .display {
-    background-color: #bab86c;
-    border:black;
+    background-color: var(--displays-color);
     border-radius: 5px;
-    width: 20em;
-    height: 3em;
-    margin: 1em 1em;
+    height: 100%;
+    margin: 0.25em;
     text-align: right;
-    
+    font-size: 3em;
+    border: solid var(--borders-color);
 }
 
 .buttons {
-    border-radius: 5px;
     width: 20em;
-    height: 20em;
-    margin: 1em 1em;
-    color: black ;
+    height: 100%;
+    margin: 0.5em 0.25em;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -46,33 +57,24 @@ html, body {
 
 .buttons button {
     border-radius: 5px;
-    background-color:#808080;
+    background-color: var(--buttons-color);
     width: 5em;
     height: 5em;
-    margin: 0.25em 0.25em;
-    padding: 0.25em 0.25em;
+    margin: 0.35em 0.35em;
 }
 
 button.digit {
-    
-    background-color:white;
-
-
+    background-color: var(--buttons-color);
 }
 
 button.clear {
-    background-color: orange;
- 
+    background-color: var(--clears-color);
 }
 
 button.op {
-    background-color: #a9a9a9;
-
-
+    background-color: var(--op-color);
 }
 
-div.equals {
-    background-color: #a9a9a9;
-
-
+button.equals {
+    background-color: var(--op-color);
 }
