@@ -9,6 +9,7 @@
             --displays-color: #efebe2;
             --op-color: #52836e;
         }
+        /*add media query when on master branch to view on mobile*/
         /*main styles*/
         
         html,
@@ -22,6 +23,7 @@
         
         h1 {
             font-size: 6vh;
+            color: var(--clears-color);
         }
         
         .calculator {
@@ -67,6 +69,14 @@
         }
         
         button.op {
+            background-color: var(--op-color);
+        }
+        
+        button.plus {
+            grid-column: 4/ 5;
+            /* start at 4, end at 5 */
+            grid-row: 4;
+            height: 210%;
             background-color: var(--op-color);
         }
         
