@@ -47,15 +47,15 @@
         .buttons {
             display: grid;
             align-content: center;
-            grid-template-columns: repeat(4, minmax(10px, 1fr));
+            grid-template-columns: repeat(4, minmax(20px, 1fr));
             grid-gap: 0.75em;
             margin: 0.75em 0.75em;
         }
         
         .buttons button {
             background-color: var(--buttons-color);
-            width: 6vw;
-            height: 12vh;
+            width: 5vw;
+            height: 10vh;
             border-radius: 1vh;
             font-size: 3vh;
         }
@@ -76,7 +76,7 @@
             grid-column: 4/ 5;
             /* start at 4, end at 5 */
             grid-row: 4;
-            height: 210%;
+            height: 220%;
             background-color: var(--op-color);
         }
         
